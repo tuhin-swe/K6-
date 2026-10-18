@@ -1,0 +1,13 @@
+{
+  "name": "dmoney-k6-performance-test",
+  "version": "1.0.0",
+  "private": true,
+  "description": "k6 performance test simulating 2 minutes of DMoney transaction activity (deposit / send money / payment) across four 30-second phases.",
+  "scripts": {
+    "test": "k6 run dmoney-load-test.js",
+    "test:dashboard": "k6 run --out web-dashboard=export=reports/dashboard.html dmoney-load-test.js",
+    "test:json": "k6 run --out json=reports/raw/metrics.json dmoney-load-test.js"
+  },
+  "keywords": ["k6", "performance-testing", "load-testing", "dmoney", "sqa"],
+  "license": "MIT"
+}

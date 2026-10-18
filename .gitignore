@@ -1,0 +1,16 @@
+# k6 / node
+node_modules/
+
+# Generated reports — keep the committed sample ones but ignore ad-hoc runs.
+# (We DO commit reports/summary.html + screenshots for submission; see README.)
+reports/*.json
+reports/raw/
+
+# OS / editor noise
+Thumbs.db
+.DS_Store
+.vscode/
+.idea/
+
+# local secrets, if any
+.env
